@@ -1,23 +1,77 @@
 aid: biolite
+
 name: Biolite
-description: 'Biolite is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: http://www.bioliteenergy.com/cdn/shop/files/BIoLite_Logo_Black_c027a27d-d0b2-4079-a551-5f23685e5da9_1200x628_pad_f5f5f5.png?v=1688072811
+
+description: BioLite is a New York City‑based startup that creates off‑grid energy products for outdoor recreation and emerging markets. Founded
+  in 2006, it designs wood‑burning stoves that generate electricity via thermoelectric technology, along with solar lighting, portable power stations,
+  and rechargeable lanterns. The company’s mission is to bring clean, reliable energy to people everywhere, supporting sustainable living and
+  empowering communities.
+
 url: https://raw.githubusercontent.com/api-evangelist/biolite/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Lighting
+- Portable Power
+- Cooking
+- Outdoor Gear
+- Home Backup
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/biolite-llms.txt
+- type: WellKnown
+  url: well-known/biolite-well-known.yml
+- type: Hosts
+  url: hosts/biolite-hosts.yml
+- type: Vendors
+  url: vendors/biolite-vendors.yml
+- type: TermsOfService
+  url: https://www.bioliteenergy.com/pages/terms-conditions
+- type: Support
+  url: https://help.bioliteenergy.com
+- type: PrivacyPolicy
+  url: https://www.bioliteenergy.com/pages/privacy-policy
+- type: Newsroom
+  url: https://www.bioliteenergy.com/blogs/press
+- type: Blog
+  url: https://blog.bioliteenergy.com
+- type: Documentation
+  url: https://help.bioliteenergy.com/
+- type: DomainSecurity
+  url: security/biolite-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/biolite
+  url: https://www.bioliteenergy.com
+
+apis:
+- name: Biolite API
+  description: Biolite exposes a GraphQL API via Shopify storefront, but ownership could not be verified.
+  humanURL: https://www.bioliteenergy.com
+  baseURL: null
+  aid: biolite:biolite-api
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 15
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

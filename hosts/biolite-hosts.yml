@@ -1,0 +1,119 @@
+generated: '2026-09-28'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 8
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - docs
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.bioliteenergy.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bioliteenergy.com
+  role: api
+  relation: own
+- host: blog.bioliteenergy.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: bioliteenergy.com
+  role: marketing
+  relation: own
+- host: ca.bioliteenergy.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: bioliteenergy.com
+  role: other
+  relation: own
+- host: eu.bioliteenergy.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: bioliteenergy.com
+  role: other
+  relation: own
+- host: global.bioliteenergy.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: bioliteenergy.com
+  role: other
+  relation: own
+- host: help.bioliteenergy.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types:
+  - Support
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: bioliteenergy.com
+  role: docs
+  relation: own
+- host: track.bioliteenergy.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bioliteenergy.com
+  role: other
+  relation: own
+- host: www.bioliteenergy.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - Website
+  serves:
+  - docs
+  - cdn
+  - hosting
+  platform: shopify.com
+  vendor: cloudflare
+  registrable_domain: bioliteenergy.com
+  role: website
+  relation: own

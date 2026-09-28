@@ -1,0 +1,6 @@
+generated: '2026-09-28'
+method: probed
+generator: harvest-llms.py
+source: https://www.bioliteenergy.com/llms.txt
+bytes: 4537
+note: saved verbatim; the provider's own document
